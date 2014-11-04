@@ -39,7 +39,7 @@ public class Generator {
 			final FileWriter fw = new FileWriter(file.getAbsoluteFile());
 			final BufferedWriter bw = new BufferedWriter(fw);
 			bw.write("VERTEX_PART_NUMBER\t" + VERTEX_PART_NUMBER + "\n");
-			bw.write("WEIGHT\t" + MIN_WEIGHT + " - " + MAX_WEIGHT + "\n");
+			bw.write("WEIGHT\t" + MIN_WEIGHT + " " + MAX_WEIGHT + "\n");
 			for (int firstV = 1; firstV < VERTEX_PART_NUMBER + 1; ++ firstV) {
 				for (int secondV = VERTEX_PART_NUMBER + 1; secondV < 2 * VERTEX_PART_NUMBER + 1; ++ secondV) {
 					final Random generator = new Random();
